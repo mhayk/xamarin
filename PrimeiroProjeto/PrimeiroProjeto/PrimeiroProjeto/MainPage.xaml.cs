@@ -12,6 +12,12 @@ namespace PrimeiroProjeto
 		public MainPage()
 		{
 			InitializeComponent();
+
 		}
-	}
+
+        private void btnClick_Clicked(object sender, EventArgs e)
+        {
+            lblResult.Text = string.Format("Você digitou: {0}", txtValue.Text);
+        }
+    }
 }
